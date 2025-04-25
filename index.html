@@ -6,30 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calzaturificio Mister Jerry</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- box icons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- remix icons link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-<header>
-    <nav>
-        <div class="logo">
-            Mister Jerry
-        </div>
-        <div class="menu">
-            <a href="shoes_page.html">Shoes</a>
-            <a href="support.html">Support</a>
-            <a href="about_us.html">About us</a>
-        </div>
-    </nav>
 
-    <section class="mid-txt">
-        <span>Forme delicate, finiture eleganti e tutto il sapere della nostra tradizione artigianale </span>
-        <br>
-        <br>
-        <h1>Leader nella produzione calzaturiera bimbi</h1>
-        <br>
-        <h3>Dal 1945</h3>
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">
+            <img src="">
+        </a>
+
+        <ul class="navigation-center">
+            <li><a href="shoes_page.html">Shoes</a></li>
+            <li><a href="about_us.html">About</a></li>
+        </ul>
+
+        <div class="navigation-right">
+            <a href="#" class="nav-btn">Contact us</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-txt">
+            <h5 data-aos="fade-right" data-aos-duration="1400">#Scarpe per un giorno importante</h5>
+            <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Solo il meglio per te</h1>
+            <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Le scarpe eleganti per bimbi uniscono stile, comfort e qualità: perfette per ogni occasione speciale con un tocco raffinato.</p>
+
+            <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="200">
+                <a href="#" class="btn">Catalogo</a>
+            </div>
+        </div>
+
+        <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
+            <img src="img/instagram-6560837_640.png">
+        </div>
     </section>
-</header>
+
+    <div class="scroll-down" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
+        <a href="#">
+            <i class="ri-scroll-to-bottom-line"></i>
+            Scroll Down
+        </a>
+    </div>
+    <!-- JS LINK -->
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
 </body>
 
 </html>
