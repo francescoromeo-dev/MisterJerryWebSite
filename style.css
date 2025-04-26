@@ -93,7 +93,7 @@ section{
 .hero{
     position: relative;
     width: 100%;
-    height: calc(var(--vh, 1vh)*100);
+    min-height: 100dvh;
     background: url(img/wallpaper.webp);
     background-size: cover;
     background-position: center;
@@ -234,7 +234,7 @@ section{
 }
 
 @media(max-width: 920px){
-    .scroll{
+    .scroll-down{
         display: none;
     }
     .hero{
@@ -274,7 +274,7 @@ section{
     :root{
         --big-font: 3.4rem;
     }
-    .hero-txt{
+    .hero-txt h5{
         font-size: 15px;
     }
     .hero-img{

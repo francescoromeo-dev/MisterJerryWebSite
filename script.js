@@ -9,8 +9,10 @@ menu.onclick = () => {
 
 //Dynamic height size fix
 function setHeroHeight() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    const hero = document.querySelector('.hero');
+    hero.style.minHeight = `${window.innerHeight}px`;
   }
-  window.addEventListener('resize', setHeroHeight);
+  
   window.addEventListener('load', setHeroHeight);
+  window.addEventListener('resize', setHeroHeight);
+  
