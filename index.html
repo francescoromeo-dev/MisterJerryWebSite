@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calzaturificio Mister Jerry</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- box icons link -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- remix icons link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>MisterJerry</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
 </head>
-
 <body>
-
-    <!-- HEADER -->
-    <header>
-        <a href="#" class="logo">
-            <img src="">
-        </a>
-
-        <ul class="navigation-center">
-            <li><a href="second-pages/shoes_page.html">Shoes</a></li>
-            <li><a href="second-pages/about_us.html">About</a></li>
-        </ul>
-
-        <div class="navigation-right">
-            <a href="#" class="nav-btn">Contact us</a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-txt">
-            <h5 data-aos="fade-right" data-aos-duration="1400">#Scarpe per un giorno importante</h5>
-            <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Solo il meglio per te</h1>
-            <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">Le scarpe eleganti per bimbi uniscono stile, comfort e qualità: perfette per ogni occasione speciale con un tocco raffinato.</p>
-
-            <div class="main-hero" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="200">
-                <a href="#" class="btn">Catalogo</a>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">MisterJerry</a>
+                <ul class="nav-links">
+                    <li><a href="pages/shoes_page.html">Shoes</a></li>
+                    <li><a href="pages/about_us.html">About</a></li>
+                    <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
+    </nav>
 
-        <div class="hero-img" data-aos="zoom-in" data-aos-duration="1400">
-            <img src="img/mister jerry.svg">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Scarpe perfette per bambini di tutte le età</h1>
+                    <p>Comfort, sicurezza e design raffinato per accompagnare ogni passo della crescita dei tuoi bambini con stile e qualità superiore.</p>
+                    <div class="hero-buttons">
+                        <a href="pages/shoes_page.html" class="btn-primary">Scopri le Scarpe</a>
+                        <a href="pages/about_us.html" class="btn-secondary">Chi Siamo</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-shoe"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="scroll-down" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
-        <a href="#">
-            <i class="ri-scroll-to-bottom-line"></i>
-            Scroll Down
-        </a>
-    </div>
-    <!-- JS LINK -->
-    <script src="script.js"></script>
+    <!-- Features Section -->
+    <section class="features fade-in">
+        <div class="container">
+            <h2>Perché Scegliere MisterJerry</h2>
+            <p class="features-subtitle">Qualità, comfort e stile si incontrano per offrire il meglio ai tuoi bambini</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">👶</span>
+                    <h3>Comfort Superiore</h3>
+                    <p>Ogni scarpa è progettata con materiali premium per garantire il massimo comfort durante tutta la giornata.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Sicurezza Certificata</h3>
+                    <p>Utilizziamo solo materiali testati e certificati, garantendo comfort, resistenza e sicurezza in ogni passo.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎨</span>
+                    <h3>Design Raffinato</h3>
+                    <p>Stile contemporaneo e design elegante che crescono insieme ai tuoi bambini, sempre alla moda.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🧵</span>
+                    <h3>Tradizione Artigianale</h3>
+                    <p>Ogni scarpa è realizzata con cura da mani esperte, unendo la passione dell'artigianato alla qualità dei materiali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 1,
-      });
-    </script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section fade-in">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Contattaci</h2>
+                <p>Hai domande sui nostri prodotti? Vuoi consigli per scegliere la scarpa giusta? Il nostro team è a tua disposizione per aiutarti.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p>info@misterjerry.it<br>assistenza@misterjerry.it</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Telefono</h3>
+                        <p>+39 02 1234 5678<br>Lun-Ven 9:00-18:00</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🏪 Negozio</h3>
+                        <p>Via Levanzo 15<br>91023 Palermo, Italia</p>
+                    </div>
+                </div>
+                <a href="mailto:info@misterjerry.it" class="contact-btn">Scrivici Ora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">MisterJerry</div>
+                <div class="footer-links">
+                    <a href="#shoes">Shoes</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p>&copy; 2025 MisterJerry s.n.c.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/scriptIndex.js"></script>
 </body>
-
 </html>

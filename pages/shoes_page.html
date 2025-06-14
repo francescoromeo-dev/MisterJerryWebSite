@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le nostre scarpe</title>
+    <link rel="stylesheet" href="../css/shoesStyle.css"> 
+</head>
+<body>
+    <!-- Main Overview Page -->
+    <div id="overview-page" class="page active">
+        <h1>Le nostre collezioni</h1>
+        <div class="container">
+            
+            <section class="category" data-category="primi-passi">
+                <a href="#" class="category-link" onclick="showPage('primi-passi')">
+                    <div class="category-header">
+                        <h2>Produzione calzature primi passi</h2>
+                        <button class="explore-btn">Esplora →</button>
+                    </div>
+                    <div class="season-container">
+                        <div class="season" data-season="ai">
+                            <div class="season img" style="width: 200px; height: 150px; background: #e9ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">👟</div>
+                            <h3>Scarpina Primi Passi</h3>
+                            <p>da €30</p>
+                        </div>
+                        <div class="season" data-season="pe">
+                            <div class="season img" style="width: 200px; height: 150px; background: #e9ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">👟</div>
+                            <h3>Scarpina Primi Passi</h3>
+                            <p>da €30</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+            
+            <section class="category" data-category="cerimonia-bambini">
+                <a href="#" class="category-link" onclick="showPage('cerimonia-bambini')">
+                    <div class="category-header">
+                        <h2>Produzione calzature cerimonia bambini</h2>
+                        <button class="explore-btn">Esplora →</button>
+                    </div>
+                    <div class="season-container">
+                        <div class="season" data-season="ai">
+                            <div class="season img" style="width: 200px; height: 150px; background: #e9ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">👞</div>
+                            <h3>Scarpine Cerimonia</h3>
+                            <p>da €45</p>
+                        </div>
+                        <div class="season" data-season="pe">
+                            <div class="season img" style="width: 200px; height: 150px; background: #e9ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">👞</div>
+                            <h3>Scarpine Cerimonia</h3>
+                            <p>da €45</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <section class="category" data-category="bambini">
+                <a href="#" class="category-link" onclick="showPage('bambini')">
+                    <div class="category-header">
+                        <h2>Produzione scarpe bambini</h2>
+                        <button class="explore-btn">Esplora →</button>
+                    </div>
+                    <div class="season-container">
+                        <div class="season" data-season="ai">
+                            <div class="season img" style="width: 200px; height: 150px; background: #e9ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">👟</div>
+                            <h3>Scarpe Bambini</h3>
+                            <p>da €40</p>
+                        </div>
+                        <div class="season" data-season="pe">
+                            <div class="season img" style="width: 200px; height: 150px; background: #e9ecef; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">👟</div>
+                            <h3>Scarpe Bambini</h3>
+                            <p>da €40</p>
+                        </div>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <!-- Primi Passi Detail Page -->
+    <div id="primi-passi-page" class="page detail-page">
+        <div class="nav-container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('overview')">Le nostre collezioni</a> > Primi Passi
+            </div>
+            <a href="#" class="back-btn" onclick="showPage('overview')">← Torna alle collezioni</a>
+        </div>
+        
+        <h1>Calzature Primi Passi</h1>
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpina Primi Passi Classica</h3>
+                        <p class="product-description">Scarpa morbida e flessibile, ideale per i primi passi. Suola antiscivolo e tomaia in pelle naturale.</p>
+                        <div class="product-price">€30</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">16</span>
+                            <span class="size-badge">17</span>
+                            <span class="size-badge">18</span>
+                            <span class="size-badge">19</span>
+                            <span class="size-badge">20</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpina Primi Passi Sport</h3>
+                        <p class="product-description">Versione più sportiva con chiusura a strappo. Perfetta per i bambini più attivi.</p>
+                        <div class="product-price">€35</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">16</span>
+                            <span class="size-badge">17</span>
+                            <span class="size-badge">18</span>
+                            <span class="size-badge">19</span>
+                            <span class="size-badge">20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpina Primi Passi Estate</h3>
+                        <p class="product-description">Versione estiva traspirante con inserti in mesh. Ideale per la stagione calda.</p>
+                        <div class="product-price">€32</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">16</span>
+                            <span class="size-badge">17</span>
+                            <span class="size-badge">18</span>
+                            <span class="size-badge">19</span>
+                            <span class="size-badge">20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cerimonia Bambini Detail Page -->
+    <div id="cerimonia-bambini-page" class="page detail-page">
+        <div class="nav-container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('overview')">Le nostre collezioni</a> > Cerimonia Bambini
+            </div>
+            <a href="#" class="back-btn" onclick="showPage('overview')">← Torna alle collezioni</a>
+        </div>
+        
+        <h1>Calzature Cerimonia Bambini</h1>
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpa Cerimonia Classica</h3>
+                        <p class="product-description">Elegante scarpa in pelle nera lucida, perfetta per occasioni speciali e cerimonie.</p>
+                        <div class="product-price">€45</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">20</span>
+                            <span class="size-badge">21</span>
+                            <span class="size-badge">22</span>
+                            <span class="size-badge">23</span>
+                            <span class="size-badge">24</span>
+                            <span class="size-badge">25</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpa Cerimonia Marrone</h3>
+                        <p class="product-description">Versione in pelle marrone, elegante e raffinata per ogni occasione formale.</p>
+                        <div class="product-price">€45</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">20</span>
+                            <span class="size-badge">21</span>
+                            <span class="size-badge">22</span>
+                            <span class="size-badge">23</span>
+                            <span class="size-badge">24</span>
+                            <span class="size-badge">25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ballerina Cerimonia</h3>
+                        <p class="product-description">Elegante ballerina per bambine, disponibile in diversi colori per ogni occasione speciale.</p>
+                        <div class="product-price">€42</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">20</span>
+                            <span class="size-badge">21</span>
+                            <span class="size-badge">22</span>
+                            <span class="size-badge">23</span>
+                            <span class="size-badge">24</span>
+                            <span class="size-badge">25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bambini Detail Page -->
+    <div id="bambini-page" class="page detail-page">
+        <div class="nav-container">
+            <div class="breadcrumb">
+                <a href="#" onclick="showPage('overview')">Le nostre collezioni</a> > Scarpe Bambini
+            </div>
+            <a href="#" class="back-btn" onclick="showPage('overview')">← Torna alle collezioni</a>
+        </div>
+        
+        <h1>Scarpe Bambini</h1>
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sneaker Bambini Classica</h3>
+                        <p class="product-description">Sneaker versatile e comoda per l'uso quotidiano. Disponibile in diversi colori.</p>
+                        <div class="product-price">€40</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">26</span>
+                            <span class="size-badge">27</span>
+                            <span class="size-badge">28</span>
+                            <span class="size-badge">29</span>
+                            <span class="size-badge">30</span>
+                            <span class="size-badge">31</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpa Sportiva Bambini</h3>
+                        <p class="product-description">Scarpa tecnica per sport e attività fisica. Suola ammortizzata e tomaia traspirante.</p>
+                        <div class="product-price">€48</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">26</span>
+                            <span class="size-badge">27</span>
+                            <span class="size-badge">28</span>
+                            <span class="size-badge">29</span>
+                            <span class="size-badge">30</span>
+                            <span class="size-badge">31</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpa Casual Bambini</h3>
+                        <p class="product-description">Scarpa casual per tutti i giorni, comoda e resistente. Perfetta per scuola e tempo libero.</p>
+                        <div class="product-price">€42</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">26</span>
+                            <span class="size-badge">27</span>
+                            <span class="size-badge">28</span>
+                            <span class="size-badge">29</span>
+                            <span class="size-badge">30</span>
+                            <span class="size-badge">31</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sandalo Estivo Bambini</h3>
+                        <p class="product-description">Sandalo estivo con chiusura regolabile. Ideale per la stagione calda e le vacanze.</p>
+                        <div class="product-price">€35</div>
+                        <div class="product-sizes">
+                            <span class="size-badge">26</span>
+                            <span class="size-badge">27</span>
+                            <span class="size-badge">28</span>
+                            <span class="size-badge">29</span>
+                            <span class="size-badge">30</span>
+                            <span class="size-badge">31</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            // Show the selected page
+            const targetPage = document.getElementById(pageId + '-page');
+            if (targetPage) {
+                targetPage.classList.add('active');
+            } else {
+                // If pageId is 'overview', show the overview page
+                document.getElementById('overview-page').classList.add('active');
+            }
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
