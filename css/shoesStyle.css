@@ -224,14 +224,15 @@ nav.scrolled {
     line-height: 1.7;
 }
 
-.seasons-container {
+/* Seasons Links - New simplified structure */
+.seasons-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-top: 3rem;
 }
 
-.season-section {
+.season-link {
     background: white;
     border-radius: 12px;
     padding: 3rem 2rem;
@@ -246,7 +247,7 @@ nav.scrolled {
     overflow: hidden;
 }
 
-.season-section::before {
+.season-link::before {
     content: '';
     position: absolute;
     top: 0;
@@ -256,15 +257,15 @@ nav.scrolled {
     transition: all 0.3s ease;
 }
 
-.season-section.season-autumn-winter::before {
+.season-link.season-autumn-winter::before {
     background: linear-gradient(135deg, #ff6b9d, #ff8a95);
 }
 
-.season-section.season-spring-summer::before {
+.season-link.season-spring-summer::before {
     background: linear-gradient(135deg, #4ecdc4, #45b7d1);
 }
 
-.season-section:hover {
+.season-link:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.12);
     text-decoration: none;
@@ -273,65 +274,18 @@ nav.scrolled {
 
 .season-title {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     color: #2c3e50;
     font-weight: 600;
     text-align: center;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
-}
-
-.product-card {
-    text-align: center;
-    padding: 1.5rem 1rem;
-    background: #f8f9fa;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0,0,0,0.03);
-}
-
-.product-card:hover {
-    transform: translateY(-3px);
-    background: #f1f3f4;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.product-image {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    opacity: 0.8;
-    transition: all 0.3s ease;
-}
-
-.product-card:hover .product-image {
-    transform: scale(1.1);
-    opacity: 1;
-}
-
-.product-name {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
-    font-size: 0.9rem;
-}
-
-.product-price {
-    color: #ff6b9d;
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.3px;
 }
 
 /* Special styling for Cerimonia section */
-.cerimonia-section .season-section.season-autumn-winter::before {
+.cerimonia-section .season-link.season-autumn-winter::before {
     background: linear-gradient(135deg, #a8e6cf, #7fcdcd);
 }
 
-.cerimonia-section .season-section.season-spring-summer::before {
+.cerimonia-section .season-link.season-spring-summer::before {
     background: linear-gradient(135deg, #ffd93d, #ff6b6b);
 }
 
@@ -396,7 +350,7 @@ footer {
         font-size: 1rem;
     }
 
-    .seasons-container {
+    .seasons-links {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -405,7 +359,7 @@ footer {
         font-size: 2rem;
     }
 
-    .season-section {
+    .season-link {
         padding: 2rem 1.5rem;
     }
 
