@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scarpe per Bambini - Collezione</title>
     <link rel="stylesheet" href="../css/shoesStyle.css">
+    
 </head>
 <body>
     <!-- Navigation -->
@@ -37,51 +38,285 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="container">
-            <!-- Sezione Bambini -->
-            <section class="main-section" id="bambini">
-                <h2 class="section-title">👶 Bambini</h2>
-                <p class="section-subtitle">Scarpe comode e resistenti per accompagnare i bambini in tutte le loro avventure quotidiane</p>
-                <div class="seasons-links">
-                    <a href="second-pages/bambini-ai.html" class="season-link season-autumn-winter">
-                        <h3 class="season-title">🍂 Autunno/Inverno</h3>
-                    </a>
-                    <a href="second-pages/bambini-pe.html" class="season-link season-spring-summer">
-                        <h3 class="season-title">🌸 Primavera/Estate</h3>
-                    </a>
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <h3>🔍 Filtri</h3>
+            
+            <div class="filter-group">
+                <h4>Categorie</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="bambini" value="bambini">
+                    <label for="bambini">👶 Bambini</label>
                 </div>
-            </section>
+                <div class="filter-option">
+                    <input type="checkbox" id="primi-passi" value="primi-passi">
+                    <label for="primi-passi">👣 Primi Passi</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="cerimonia" value="cerimonia">
+                    <label for="cerimonia">✨ Cerimonia</label>
+                </div>
+            </div>
 
-            <!-- Sezione Primi Passi -->
-            <section class="main-section" id="primi-passi">
-                <h2 class="section-title">👣 Primi Passi</h2>
-                <p class="section-subtitle">Scarpe speciali pensate per accompagnare i primi passi dei bambini con la massima sicurezza e comfort</p>
-                <div class="seasons-links">
-                    <a href="second-pages/primi-passi-ai.html" class="season-link season-autumn-winter">
-                        <h3 class="season-title">🍂 Autunno/Inverno</h3>
-                    </a>
-                    <a href="second-pages/primi-passi-pe.html" class="season-link season-spring-summer">
-                        <h3 class="season-title">🌸 Primavera/Estate</h3>
-                    </a>
+            <div class="filter-group">
+                <h4>Stagioni</h4>
+                <div class="filter-option">
+                    <input type="checkbox" id="autunno-inverno" value="autunno-inverno">
+                    <label for="autunno-inverno">🍂 Autunno/Inverno</label>
                 </div>
-            </section>
+                <div class="filter-option">
+                    <input type="checkbox" id="primavera-estate" value="primavera-estate">
+                    <label for="primavera-estate">🌸 Primavera/Estate</label>
+                </div>
+            </div>
 
-            <!-- Sezione Cerimonia -->
-            <section class="main-section cerimonia-section" id="cerimonia">
-                <h2 class="section-title">✨ Cerimonia Bambini</h2>
-                <p class="section-subtitle">Scarpe eleganti per le occasioni speciali, matrimoni, battesimi e cerimonie importanti</p>
-                <div class="seasons-links">
-                    <a href="second-pages/cerimonia-bambini-ai.html" class="season-link season-autumn-winter">
-                        <h3 class="season-title">🍂 Autunno/Inverno</h3>
-                    </a>
-                    <a href="second-pages/cerimonia-bambini-pe.html" class="season-link season-spring-summer">
-                        <h3 class="season-title">🌸 Primavera/Estate</h3>
-                    </a>
+            <button class="clear-filters">Cancella Filtri</button>
+        </aside>
+
+        <!-- Content Area -->
+        <main class="content-area">
+            <div class="results-header">
+                <span class="results-count">Mostrando <span id="count">24</span> prodotti</span>
+                <select class="sort-select">
+                    <option value="default">Ordina per</option>
+                    <option value="name">Nome A-Z</option>
+                    <option value="category">Categoria</option>
+                    <option value="season">Stagione</option>
+                </select>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Prodotti Bambini Autunno/Inverno -->
+                <div class="product-card" data-category="bambini" data-season="autunno-inverno">
+                    <div class="product-image">👟</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sneakers Bambini Winter</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
                 </div>
-            </section>
-        </div>
+
+                <div class="product-card" data-category="bambini" data-season="autunno-inverno">
+                    <div class="product-image">🥾</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Stivaletti Impermeabili</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bambini" data-season="autunno-inverno">
+                    <div class="product-image">👢</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Stivali Caldi</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <!-- Prodotti Bambini Primavera/Estate -->
+                <div class="product-card" data-category="bambini" data-season="primavera-estate">
+                    <div class="product-image">👟</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sneakers Traspiranti</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bambini" data-season="primavera-estate">
+                    <div class="product-image">🩴</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sandali Estivi</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bambini" data-season="primavera-estate">
+                    <div class="product-image">👟</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe da Ginnastica</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <!-- Prodotti Primi Passi Autunno/Inverno -->
+                <div class="product-card" data-category="primi-passi" data-season="autunno-inverno">
+                    <div class="product-image">👶</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpine Primi Passi</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="primi-passi" data-season="autunno-inverno">
+                    <div class="product-image">🧸</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Babbucce Morbide</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="primi-passi" data-season="autunno-inverno">
+                    <div class="product-image">🦶</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpine Antiscivolo</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <!-- Prodotti Primi Passi Primavera/Estate -->
+                <div class="product-card" data-category="primi-passi" data-season="primavera-estate">
+                    <div class="product-image">👶</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpine Leggere</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="primi-passi" data-season="primavera-estate">
+                    <div class="product-image">🌸</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sandalini Bambina</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="primi-passi" data-season="primavera-estate">
+                    <div class="product-image">☀️</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpine Estive</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <!-- Prodotti Cerimonia Autunno/Inverno -->
+                <div class="product-card" data-category="cerimonia" data-season="autunno-inverno">
+                    <div class="product-image">✨</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Eleganti Inverno</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cerimonia" data-season="autunno-inverno">
+                    <div class="product-image">🎩</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mocassini Cerimonia</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cerimonia" data-season="autunno-inverno">
+                    <div class="product-image">💎</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ballerine Eleganti</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <!-- Prodotti Cerimonia Primavera/Estate -->
+                <div class="product-card" data-category="cerimonia" data-season="primavera-estate">
+                    <div class="product-image">🌺</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Battesimo</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cerimonia" data-season="primavera-estate">
+                    <div class="product-image">🎀</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Ballerine Matrimonio</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cerimonia" data-season="primavera-estate">
+                    <div class="product-image">🤵</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Comunione</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <!-- Prodotti aggiuntivi per completare la griglia -->
+                <div class="product-card" data-category="bambini" data-season="autunno-inverno">
+                    <div class="product-image">🏃</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Sportive</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bambini" data-season="primavera-estate">
+                    <div class="product-image">🌊</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Acquatiche</h3>
+                        <p class="product-category">Bambini</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="primi-passi" data-season="autunno-inverno">
+                    <div class="product-image">🧦</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Calze Antiscivolo</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season autumn-winter">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="primi-passi" data-season="primavera-estate">
+                    <div class="product-image">🦋</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpine Colorate</h3>
+                        <p class="product-category">Primi Passi</p>
+                        <span class="product-season spring-summer">Primavera/Estate</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cerimonia" data-season="autunno-inverno">
+                    <div class="product-image">👑</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Principessa</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Autunno/Inverno</span>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cerimonia" data-season="primavera-estate">
+                    <div class="product-image">🌟</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Scarpe Festa</h3>
+                        <p class="product-category">Cerimonia</p>
+                        <span class="product-season ceremony">Primavera/Estate</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="no-results hidden" id="no-results">
+                <h3>Nessun prodotto trovato</h3>
+                <p>Prova a modificare i filtri di ricerca</p>
+            </div>
+        </main>
     </div>
 
     <!-- Footer -->
